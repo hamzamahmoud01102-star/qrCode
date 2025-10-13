@@ -7,12 +7,14 @@
   <link rel="stylesheet" href="style.css">
   <style>
     body {
+      background-color: #222;
       color: #fff;
       font-family: "Cairo", sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      background-image: url(./ooo.png);
     }
 
     form {
@@ -52,7 +54,8 @@
 <body>
   <form method="POST" id="feedbackForm">
     <h2>من فضلك اكتب اسمك وإجابتك</h2>
-    <input type="text" id="name" placeholder="الاسم" name="name" required>
+    <p>لو اجابتك صح هنجيبلك هديه</p>
+    <input type="text" id="name" placeholder="الاسم و الفصل" name="name" required>
     <textarea id="answer" rows="4" name="message" placeholder="إجابتك..." required></textarea>
     <button type="submit">إرسال</button>
   </form>
@@ -68,7 +71,7 @@
       event.preventDefault();
       emailjs.sendForm('service_hznzont', 'template_odmsxpd', this)
         .then(function() {
-          alert('Your Ans. Arrived Cong. HAMZA')
+          alert('Message sent successfully!');
         }, function(error) {
           alert('Failed to send message. Error: ' + JSON.stringify(error));
         });
@@ -76,7 +79,3 @@
   </script>
 </body>
 </html>
-
-
-
-
