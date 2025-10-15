@@ -1,7 +1,24 @@
 body{
-    background-image: url(ooo.png);
+    background-image: url(./ooo.png);
     background-size: cover;
+    
 }
+a {
+    color: rgb(255, 238, 0);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
-
-
+}
+a:hover{
+    color: rgb(255, 166, 0);
+}
